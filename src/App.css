@@ -9,9 +9,10 @@ body, html {
   height: auto;
   padding: 0;
   margin: 0;
-  background: linear-gradient( #f5f7fa, #c3cfe2);
+  background: linear-gradient(to bottom, #333333, #1a1a1a);
   background-position: cover;
   background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 #todo-list {
@@ -20,7 +21,8 @@ body, html {
 }
 
 form, .todo {
-  border: 1px solid rgb(15, 26, 61);
+  border: 1px solid #444444;
+  box-shadow: 0px 0px 6px rgba(173, 173, 173, 0.1);
   border-radius: 0.875em;
   padding: 10px 20px;
   margin-bottom: 10px;
@@ -37,6 +39,13 @@ form input {
   flex-grow: 1;
   margin-right: 16px;
   border-radius: 0.6em;
+  background-color: transparent;
+  border: 1px solid grey;
+
+}
+
+form input:active{
+  border: 1px solid lightgrey;
 
 }
 
@@ -48,20 +57,24 @@ form input {
 button {
   font-size: 16px;
   font-family: outfit, sans-serif;
-  background: linear-gradient(#ffe7c5, #ffcf8b);
-  color: #fff;
+  background: #1a1a1a;
+  color: #ffffff;
   border-radius: 0.6em;
   border: none;
   padding: 8px 16px;
   cursor: pointer;
+  box-shadow: 0px 0px 6px rgba(212, 212, 212, 0.1);
+
 }
 
 button:hover {
-  background-color: rgb(173, 47, 28);
+  background-color: #333333;
+  box-shadow: 0px 0px -6px rgba(59, 59, 59, 0.1);
+
 }
 
 button:active {
-  background-color: rgb(130,35,21);
+  background-color: #000000;
 }
 
 button:focus {
@@ -74,15 +87,24 @@ input[type='text'] {
 }
 
 .todo input[type="checkbox"] {
-  transform: scale(1.8) translateY(1px);
-  margin: 0 16px 0 0;
-  cursor: pointer;
-  border-radius: 0.4em;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.todo input[type="checkbox"]:checked {
+  background-color: #b9b9b9; 
+  border: 1px solid #b9b9b9;
 }
 
 .todo-text input {
   padding: 4px;
   border-radius: 0.6em;
+  background-color: transparent;
+
 }
 
 .completed {
