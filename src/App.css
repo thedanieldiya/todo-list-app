@@ -150,3 +150,12 @@ input[type='text'] {
   margin-left: 15px;
 }
 
+.footer {
+  position: relative;
+  text-align: center;
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  width: 100%; /* Full width */
+  bottom: 0;
+}
+

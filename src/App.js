@@ -105,8 +105,13 @@ return(
 
       <button onClick={() => deleteTodo(todo.id)}>Delete</button>
      </div>
+    
   </div>
+
 ))}
+<div className="footer">
+ Copyright © 2023 thedanieldiya.
+</div>
 </div>
 );
 };
