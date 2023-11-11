@@ -110,7 +110,7 @@ return(
 
 ))}
 <div className="footer">
- Copyright © 2023 thedanieldiya.
+  2023, thedanieldiya.
 </div>
 </div>
 );
