@@ -61,7 +61,12 @@ form input:active{
     width: 75%; 
     margin: 0.625em auto;
   }
+
+  form {
+    margin-bottom: 2em;
+  }
 }
+
 
 button {
   font-size: 1em;
