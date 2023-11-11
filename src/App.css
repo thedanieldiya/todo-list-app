@@ -56,7 +56,7 @@ form input:active{
   flex-direction: column;
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   form, .todo {
     width: 75%; 
     margin: 0.625em auto;
