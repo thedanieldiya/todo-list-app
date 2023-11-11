@@ -6,46 +6,46 @@ h1 {
 
 body, html {
   /* background: grey; */
-  height: auto;
+  /* height: auto; */
   padding: 0;
   margin: 0;
   background: linear-gradient(to bottom, #333333, #1a1a1a);
   background-position: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   color: #ffffff;
 }
 
 #todo-list {
-  width: 500px;
-  margin: 60px auto;
+  width: 31.25em;
+  margin: 3.75em auto;
 }
 
 form, .todo {
   border: 1px solid #444444;
   box-shadow: 0px 0px 6px rgba(173, 173, 173, 0.1);
   border-radius: 0.875em;
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  padding: 0.625em 1.25em;
+  margin-bottom: 0.625em;
 }
 
 form {
   display: flex;
   justify-content: stretch;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 form input {
-  padding: 4px 8px;
+  padding: 0.25em 0.5em;
   flex-grow: 1;
-  margin-right: 16px;
-  border-radius: 0.6em;
+  margin-right: 1em;
+  border-radius: 0.8em;
   background-color: transparent;
   border: 1px solid grey;
 
 }
 
 form input:active{
-  border: 1px solid lightgrey;
+  border: 1px solid black;
 
 }
 
@@ -55,13 +55,13 @@ form input:active{
 }
   
 button {
-  font-size: 16px;
+  font-size: 1em;
   font-family: outfit, sans-serif;
   background: #1a1a1a;
   color: #ffffff;
   border-radius: 0.6em;
   border: none;
-  padding: 8px 16px;
+  padding: 0.5em 1em;
   cursor: pointer;
   box-shadow: 0px 0px 6px rgba(212, 212, 212, 0.1);
 
@@ -102,9 +102,11 @@ input[type='text'] {
 }
 
 .todo-text input {
-  padding: 0.25em;
+  padding: 0.25em 0.5em;
   border-radius: 0.6em;
   background-color: transparent;
+  background-color: transparent;
+  border: 1px solid grey;
 
 }
 
@@ -119,10 +121,12 @@ input[type='text'] {
   display: flex;
   align-self: center;
 }
+
 .todo-completed {
   display: flex;
   margin: 0.625em 0;
 }
+
 .todo-actions {
   display: flex;
   justify-content: space-between;
