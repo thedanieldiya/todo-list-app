@@ -82,17 +82,18 @@ button:focus {
 }
 
 input[type='text'] { 
-  font-size: 20px; 
+  font-size: 1em; 
   font-family: monospace; 
+  color: #ffffff;
 }
 
 .todo input[type="checkbox"] {
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 1.5em;
+  height: 1.5em;
   border: 1px solid #888;
-  border-radius: 4px;
-  margin-right: 10px;
+  border-radius: 0.25em;
+  margin-right: 0.625em;
 }
 
 .todo input[type="checkbox"]:checked {
@@ -101,7 +102,7 @@ input[type='text'] {
 }
 
 .todo-text input {
-  padding: 4px;
+  padding: 0.25em;
   border-radius: 0.6em;
   background-color: transparent;
 
@@ -112,15 +113,15 @@ input[type='text'] {
 }
 
 .todo-text {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5em;
+  line-height: 1.5em;
   margin-bottom: 1cm;
   display: flex;
   align-self: center;
 }
 .todo-completed {
   display: flex;
-  margin: 10px 0;
+  margin: 0.625em 0;
 }
 .todo-actions {
   display: flex;
